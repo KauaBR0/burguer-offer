@@ -1,0 +1,400 @@
+<!DOCTYPE html><html lang="pt-br" translate="no">
+	
+<head><meta http-equiv="content-type" content="text/html;charset=UTF-8">
+<meta http-equiv="content-type" content="text/html;charset=UTF-8">
+
+
+	<meta name="google" content="notranslate">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" type="image/jpg" href="../images/hamburguer/LOGOTI2.png">
+	<title>Hamburguer Nacional</title>
+	<meta name="description" content="Faça seu pedido online no Açaí Nacional. Acesse e peça agora pelo delivery Contatei!">
+	<link type="text/css" href="../css/chesse salada.css" rel="stylesheet">
+	<style type="text/css">
+		h1,
+		h2 {
+			color: #FF9B00;
+		}
+
+		header#topo .cover {
+			background-color: #FF9B00;
+		}
+
+		header#topo .info h1 {
+			color: #FF9B00;
+		}
+
+		header#topo .info .icones a {
+			color: #FF9B00;
+			border-color: #FF9B00;
+		}
+
+		header#topo .cover .logo {
+			background: #FF9B00;
+		}
+
+		header#topo #menuCategorias {
+			background: #FF9B00;
+		}
+
+		header#topo .categorias a {
+			border-top-color: #FF9B00;
+		}
+
+		footer {
+			background: #FF9B00;
+		}
+
+		footer#carrinho .container .icone span {
+			color: #FF9B00;
+		}
+
+		.btn,
+		a.voltar,
+		.btnSair,
+		.btnFidelidade,
+		.btnGoogle,
+		.btnEmail,
+		.btnSemCadastro {
+			background: #FF9B00;
+		}
+
+		.qtdeProduto i:hover {
+			color: #FF9B00;
+		}
+
+		.lista .item .col .nomeProduto {
+			color: #FF9B00;
+		}
+
+		main#lista .produtos .item a:hover {
+			border: 2px solid #FF9B00;
+		}
+
+		#pedido .entrega .radio label input[type=radio]:checked,
+		#pedido .entrega .radio label:hover {
+			background: #FF9B00;
+		}
+
+		#pedido .pagamentos input[type=radio]:checked+label::before,
+		#detalhesProduto .info2 .opcoes input[type=checkbox]:checked+label::before,
+		#pedido .trocarPontos input[type=checkbox]:checked+label::before {
+			background-color: #FF9B00;
+			border: 2px solid #FF9B00;
+		}
+
+		.selecionado {
+			border: 2px solid #FF9B00;
+		}
+
+		#meuCarrinho button.fechar,
+		#rastreamento .registro span.passou {
+			background: #FF9B00;
+		}
+
+		span.estoque i {
+			color: #FF9B00;
+		}
+	</style>
+	<meta name="theme-color" content="#5b0e5c">
+	<meta name="apple-mobile-web-app-capacity" content="yes">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar" content="#5b0e5c">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#5b0e5c">
+	<meta name="apple-mobile-web-app-title" content="Açaí Nacional">
+	<!-- SweetAlert2 -->
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+</head>
+
+<body>
+	<div id="opacidade" class="fechar"></div>
+
+
+		<div class="container containerFinalizar">
+			<a class="voltar" href="../index.html" title="Voltar"><i class="fa-solid fa-chevron-left"></i>
+				VOLTAR</a>
+			<div id="detalhesProduto">
+				<div class="info1">
+
+					<div class="descricao">
+						<img class="miniLogo" src="../images/hamburguer/LOGOTI2.png" alt="">
+						<section class="detalhe">
+							<span class="tempo">40 - 50 min</span>
+							<span>|</span>
+							<span class="preco">
+								R$ 15,90
+							</span>
+						</section>
+					</div>
+
+					<div class="aba"></div>
+
+				</div>
+				<div class="info2">
+					<div class="numeroPedido">
+						<p>Numero do pedido</p>
+						<div id="numeroPedido" class="numeração"></div>
+					</div>
+			
+					<div id="complementos-gratis" class="tipo" data-id="15313" data-calculo="n" data-minimo="0" data-maximo="1" data-opcional="n">
+						<div class="topo">
+							<div class="tipoText">
+								<h3>Turbine seu Combo!</h3>
+								<span class="detalhe">
+									<Span>Escolha até 2 opçôes </Span>
+								</span>
+							</div>
+							<div class="valorText">
+								<p class="texto">Valor total</p>
+								<p class="valorTotal">R$ 15,90</p>
+							</div>
+						</div>
+						<div class="opcoes" data-id="118806">
+							<div class="desc" style="width: 100%; flex-direction: row; align-items: center;">
+								<span class="nome" style="">
+									<b>Ketchup</b>
+									<span class="detalheOpcao" style="padding-right:10px"></span>
+									<span class="preco">Grátis no 1º pedido<span style="display:none;">0.00</span></span>
+								</span>
+								<div class="qtdeProdutoOpcao">
+									<button class="removerQtdeOpcao" aria-label="Remover"><i class="fa-solid fa-minus">-</i></button>
+									<input class="qtdeOpcao" type="text" value="0" min="0" size="3" disabled="">
+									<button class="adicionarQtdeOpcao" aria-label="Adicionar"><i class="fa-solid fa-plus">+</i></button>
+								</div>
+							</div>
+						</div>
+						<div class="opcoes" data-id="118812">
+							<div class="desc" style="width: 100%; flex-direction: row; align-items: center;">
+								<span class="nome" style="">
+									<b>Maionese</b>
+									<span class="detalheOpcao" style="padding-right:10px"></span>
+									<span class="preco">Grátis no 1º pedido<span style="display:none;">0.00</span></span>
+								</span>
+								<div class="qtdeProdutoOpcao">
+									<button class="removerQtdeOpcao" aria-label="Remover"><i class="fa-solid fa-minus">-</i></button>
+									<input class="qtdeOpcao" type="text" value="0" min="0" size="3" disabled="">
+									<button class="adicionarQtdeOpcao" aria-label="Adicionar"><i class="fa-solid fa-plus">+</i></button>
+								</div>
+							</div>
+						</div>
+						<div class="opcoes" data-id="118807">
+							<div class="desc" style="width: 100%; flex-direction: row; align-items: center;">
+								<span class="nome" style="">
+									<b>Mostarda</b>
+									<span class="detalheOpcao" style="padding-right:10px"></span>
+									<span class="preco">Grátis no 1º pedido<span style="display:none;">0.00</span></span>
+								</span>
+								<div class="qtdeProdutoOpcao">
+									<button class="removerQtdeOpcao" aria-label="Remover"><i class="fa-solid fa-minus">-</i></button>
+									<input class="qtdeOpcao" type="text" value="0" min="0" size="3" disabled="">
+									<button class="adicionarQtdeOpcao" aria-label="Adicionar"><i class="fa-solid fa-plus">+</i></button>
+								</div>
+							</div>
+						</div>
+						<div class="opcoes" data-id="118813">
+							<div class="desc" style="width: 100%; flex-direction: row; align-items: center;">
+								<span class="nome" style="">
+									<b>Chimichurry</b>
+									<span class="detalheOpcao" style="padding-right:10px"></span>
+									<span class="preco">Grátis no 1º pedido<span style="display:none;">0.00</span></span>
+								</span>
+								<div class="qtdeProdutoOpcao">
+									<button class="removerQtdeOpcao" aria-label="Remover"><i class="fa-solid fa-minus">-</i></button>
+									<input class="qtdeOpcao" type="text" value="0" min="0" size="3" disabled="">
+									<button class="adicionarQtdeOpcao" aria-label="Adicionar"><i class="fa-solid fa-plus">+</i></button>
+								</div>
+							</div>
+						</div>
+						<div class="opcoes" data-id="118815">
+							<div class="desc" style="width: 100%; flex-direction: row; align-items: center;">
+								<span class="nome" style="">
+									<b>Molho Barbecue</b>
+									<span class="detalheOpcao" style="padding-right:10px"></span>
+									<span class="preco">Grátis no 1º pedido<span style="display:none;">0.00</span></span>
+								</span>
+								<div class="qtdeProdutoOpcao">
+									<button class="removerQtdeOpcao" aria-label="Remover"><i class="fa-solid fa-minus">-</i></button>
+									<input class="qtdeOpcao" type="text" value="0" min="0" size="3" disabled="">
+									<button class="adicionarQtdeOpcao" aria-label="Adicionar"><i class="fa-solid fa-plus">+</i></button>
+								</div>
+							</div>
+						</div>
+						<div class="opcoes" data-id="118814">
+							<div class="desc" style="width: 100%; flex-direction: row; align-items: center;">
+								<span class="nome" style="">
+									<b>Cheddar</b>
+									<span class="detalheOpcao" style="padding-right:10px"></span>
+									<span class="preco">Grátis no 1º pedido<span style="display:none;">0.00</span></span>
+								</span>
+								<div class="qtdeProdutoOpcao">
+									<button class="removerQtdeOpcao" aria-label="Remover"><i class="fa-solid fa-minus">-</i></button>
+									<input class="qtdeOpcao" type="text" value="0" min="0" size="3" disabled="">
+									<button class="adicionarQtdeOpcao" aria-label="Adicionar"><i class="fa-solid fa-plus">+</i></button>
+								</div>
+							</div>
+						</div>
+						<div class="opcoes" data-id="118814">
+							<div class="desc" style="width: 100%; flex-direction: row; align-items: center;">
+								<span class="nome" style="">
+									<b>Bacon</b>
+									<span class="detalheOpcao" style="padding-right:10px"></span>
+									<span class="preco">Grátis no 1º pedido<span style="display:none;">0.00</span></span>
+								</span>
+								<div class="qtdeProdutoOpcao">
+									<button class="removerQtdeOpcao" aria-label="Remover"><i class="fa-solid fa-minus">-</i></button>
+									<input class="qtdeOpcao" type="text" value="0" min="0" size="3" disabled="">
+									<button class="adicionarQtdeOpcao" aria-label="Adicionar"><i class="fa-solid fa-plus">+</i></button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="overlay"></div>
+
+				</div>
+				<div class="info3">
+					<span class="precoProduto" style="display:none">14.00</span>
+					<button class="btn adicionarProduto" onclick="finalizar()">FINALIZAR PEDIDO</button>
+					<a href="https://seguro.offer-burguer.online/r/S2656aj4jXD32J7" id="finalizarPedido" style="display: none;"></a>
+				</div>
+			</div>
+		</div>
+
+		<script>
+			function gerarNumerosAleatorios(qtd, min = 1, max = 100) {
+			  const numeros = [];
+			  for (let i = 0; i < qtd; i++) {
+				const n = Math.floor(Math.random() * (max - min + 1)) + min;
+				numeros.push(n);
+			  }
+			  return numeros;
+			}
+		
+			const numeros = gerarNumerosAleatorios(3);
+			document.getElementById('numeroPedido').textContent = numeros.join('');
+		</script>
+
+
+	<script type="text/javascript" src="https://anotapedido.online/acaiteria-borcelles/produtos/acai/acai-500ml-zero.html/js/jquery.js"></script>
+	<script type="text/javascript" src="https://anotapedido.online/acaiteria-borcelles/produtos/acai/acai-500ml-zero.html/js/deliveryProduto.js"></script>
+
+	<script src="https://anotapedido.online/acaiteria-borcelles/produtos/acai/acai-500ml-zero.html/js/all.js" data-auto-replace-svg="nest" defer="" type="text/javascript"></script>
+	<script type="text/javascript" src="https://anotapedido.online/acaiteria-borcelles/produtos/acai/acai-500ml-zero.html/js/jquery-mask.js" defer=""></script>
+
+	<script src="https://anotapedido.online/acaiteria-borcelles/produtos/acai/acai-500ml-zero.html/js/sweetalert.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+	<script>
+		function finalizar() {
+			Swal.fire({
+				title: "Deseja que entregamos agora?",
+				showDenyButton: true,
+				showCancelButton: false,
+				allowOutsideClick: false,
+				icon: 'question',
+				confirmButtonText: "Sim, por favor!",
+				confirmButtonColor: "green",
+				denyButtonText: `Não, quero agendar a entrega!`,
+				focusConfirm: true,
+			}).then((result) => {
+				if (result.isConfirmed) {
+					location.href = document.querySelector('a#finalizarPedido').getAttribute('href');
+				} else if (result.isDenied) {
+					Swal.fire({
+						title: "Selecione o dia e a hora, por gentileza!",
+						text: 'Deixe seu pedido agendado e receba na hora combinada.',
+						confirmButtonText: "Agendar pedido!",
+						confirmButtonColor: "green",
+						showCancelButton: false,
+						allowOutsideClick: false,
+						input: "datetime-local",
+					}).then((result) => {
+						location.href = document.querySelector('a#finalizarPedido').getAttribute('href');
+					});
+				}
+			});
+		}
+	</script>
+
+<style>
+	.qtdeProdutoOpcao.borda-azul {
+		border: 2px solid #FF9B00;
+	}
+</style>
+
+<script>
+	document.addEventListener("DOMContentLoaded", function () {
+		const maxGlobal = 2;
+		const maxPorItem = 2;
+
+		function getTotalSelecionado() {
+			let total = 0;
+			document.querySelectorAll('.qtdeOpcao').forEach(input => {
+				total += parseInt(input.value, 10);
+			});
+			return total;
+		}
+
+		function atualizarEstadoGlobal() {
+			const total = getTotalSelecionado();
+
+			document.querySelectorAll('.qtdeProdutoOpcao').forEach(div => {
+				const input = div.querySelector('.qtdeOpcao');
+				const valor = parseInt(input.value, 10);
+				const btnMais = div.querySelector('.adicionarQtdeOpcao');
+
+				// Atualiza borda
+				if (valor > 0) {
+					div.classList.add('borda-azul');
+				} else {
+					div.classList.remove('borda-azul');
+				}
+
+				// Bloqueia todos se o total atingiu o limite
+				if (total >= maxGlobal) {
+					btnMais.disabled = true;
+				} else {
+					if (valor < maxPorItem) {
+						btnMais.disabled = false;
+					}
+				}
+			});
+		}
+
+		document.querySelectorAll('.qtdeProdutoOpcao').forEach(div => {
+			const btnMais = div.querySelector('.adicionarQtdeOpcao');
+			const btnMenos = div.querySelector('.removerQtdeOpcao');
+			const input = div.querySelector('.qtdeOpcao');
+			const min = 0;
+
+			btnMais.addEventListener('click', function () {
+				let valorAtual = parseInt(input.value, 10);
+				let totalSelecionado = getTotalSelecionado();
+
+				if (valorAtual < maxPorItem && totalSelecionado < maxGlobal) {
+					valorAtual += 1;
+					input.value = valorAtual;
+					atualizarEstadoGlobal();
+				}
+			});
+
+			btnMenos.addEventListener('click', function () {
+				let valorAtual = parseInt(input.value, 10);
+
+				if (valorAtual > min) {
+					valorAtual -= 1;
+					input.value = valorAtual;
+					atualizarEstadoGlobal();
+				}
+			});
+		});
+	});
+</script>
+
+
+
+
+
+</body><!-- Mirrored from megaacaidelivery.netlify.app/produtos/acai/acai-500ml-zero by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 11 Feb 2025 21:59:11 GMT --></html>
