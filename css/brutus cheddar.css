@@ -586,7 +586,7 @@ a.voltar2 i {
 }
 
 .info1 {
-    background-image: url('../images/product_img/brutus\ cheddar.png');
+    background-image: url('https://images.unsplash.com/photo-1565299507177-b0ac66763828?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&h=300&q=80');
     background-size: cover;         /* cobre toda a tela */
     background-position: center;    /* centraliza a imagem */
     background-repeat: no-repeat;   /* evita repetição da imagem */
