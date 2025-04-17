@@ -8,6 +8,54 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+    <!-- Modal de Localização -->
+    <div id="locationModal" class="modal">
+        <div class="modal-content">
+            <h2>Informe sua localização</h2>
+            <p>Para melhor atendê-lo, precisamos saber onde você está.</p>
+            <div class="location-form">
+                <div class="form-group">
+                    <label for="estado">Estado:</label>
+                    <select id="estado" name="estado">
+                        <option value="">Selecione um estado</option>
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PR">Paraná</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantins</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="cidade">Cidade:</label>
+                    <input type="text" id="cidade" name="cidade" placeholder="Digite sua cidade">
+                </div>
+                <button id="saveLocation" class="location-button">Confirmar</button>
+            </div>
+        </div>
+    </div>
+
     <div class="container">
         <!-- Restaurant Header -->
         <header class="restaurant-header">
@@ -19,13 +67,14 @@
                     </div>
                     <h1>Hamburguer Nacional</h1>
                     <p class="distance">1,7 km • Min R$ 10,00</p>
-                    
+                    <p class="user-location"><i class="fas fa-map-marker-alt"></i> <span id="userState"></span> - <span id="userCity"></span></p>
+
                     <div class="rating">
                         <span class="star">★</span>
                         <span>4,8 (870 avaliações) - Loja Verificada!</span>
                         <span class="arrow">></span>
                     </div>
-                    
+
                     <div class="delivery-info">
                         <span>Entrega > Hoje, 45-60 Min - GRÁTIS</span>
                         <span class="arrow">></span>
@@ -37,7 +86,7 @@
         <!-- Free Delivery Banner -->
         <div class="free-delivery-banner">
             <i class="fas fa-map-marker-alt"></i>
-            Entrega Grátis para pedidos acima de R$ 10,00!
+            Entrega Grátis para <span id="deliveryCity">sua cidade</span>!
         </div>
 
         <!-- Best Sellers Section -->
